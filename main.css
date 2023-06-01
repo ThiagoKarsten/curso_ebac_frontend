@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*  #body: elemento pai do html, todo conteudo esta dentro do body
+    #Abaixo estamos referenciando para editar o filho direto do body, ou seja é o header que esta logo apos o body
+*/
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+/* #Aqui estou referenciando a tag container dentro do elemento header
+#Estou alinhando o texto lado a lado com "display: flex" 
+# align-items: center: alinhar os itens do Menu  */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+/*  # display: inline: alinhar os elementos lado a lado
+    # display: block: alinhar os elementos em bloco
+    # display: none: ocultar os elementos
+*/
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+/* Cor da letra do link no Menu do texto */
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto;
+
+}
+
+/* # display: flex: manter os conteudos um ao lado do outro!
+    #flex-wrap: wrap: quando nossa linha acabar de tamanho ele criara outra linha!
+    #justify-content: space-between: ele da o espaçamento que tem sobrando para os itens da pagina ficarem mais separados e organizados! 
+*/
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+/* colocamos o widt em 30% para caber no max tres imagens por linha pois fizemos 30 x 3 que no caso 30 é o espaço que a imagem vai ocupar em uma pagina de 100% */
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+/* Defiinindo o espaçamento que vai ter abaixo da tag "h2" e da tag article */
+section h2, 
+.articles article{
+    margin-bottom: 16px;
+}
+
+/* Dedixando os espaçamentos corretos entre os conteudos */
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Criando um botão na tag "a" */
+.articles article a{
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Adicionando uma ação ao botão assim que passar o mouse por cima dele */
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+/* Definindo a fonte no paragrafo (p) e no link (a) */
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fonte do articles article h3 sera 24px */
+.articles article h3{
+    font-size: 24px;
+}
+
+/* Fonte do h2 em section sera 32px */
+section h2{
+    font-size: 32px;
+}
+
+/* Colocando uma cor de fundo */
+#sports{
+    background-color: rgba(255, 255, 0, 0.428);
+}
+
+/* Colocando uma cor no botao */
+#sports .articles article a{
+    background-color: green
+}
+
+/* Colocando uma cor de fundo */
+#economy{
+    background-color: #96fb5262;
+}
+
+/* Colocando uma cor no botao */
+#economy .articles article a{
+    background-color: green;
+}
+
+.articles header{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.articles article a{
+    background-color: green;
+}
+
+#entretenimento{
+    background-color: rgba(255, 166, 0, 0.63)
+}
+
+.velozes{
+    height: 320px;
+}
+
+#tecnologia{
+    background-color: rgba(84, 189, 224, 0.704);
+}
+
+.artificial{
+    height: 270px;
+}
