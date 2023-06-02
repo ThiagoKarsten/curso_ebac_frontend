@@ -125,7 +125,7 @@ section h2{
 
 /* Colocando uma cor no botao */
 #sports .articles article a{
-    background-color: green
+    background-color: rgb(128, 98, 0)
 }
 
 /* Colocando uma cor de fundo */
@@ -135,7 +135,7 @@ section h2{
 
 /* Colocando uma cor no botao */
 #economy .articles article a{
-    background-color: green;
+    background-color: rgb(0, 128, 105);
 }
 
 .articles header{
@@ -144,12 +144,12 @@ section h2{
     color: brown;
 }
 
-.articles article a{
-    background-color: green;
-}
-
 #entretenimento{
     background-color: rgba(255, 166, 0, 0.63)
+}
+
+#entretenimento .articles article a{
+    background-color:rgba(255, 51, 0, 0.661) ;
 }
 
 .velozes{
@@ -158,6 +158,10 @@ section h2{
 
 #tecnologia{
     background-color: rgba(84, 189, 224, 0.704);
+}
+
+#tecnologia .articles article a{
+    background-color: rgba(15, 135, 255, 0.76);
 }
 
 .artificial{
