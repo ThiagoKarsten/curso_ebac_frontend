@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+form{
+    margin-top: 20px;
+}
+
+button, input{
+    display: block;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 70%;
+    resize: none;
+}
+
+button{
+    background-color: goldenrod;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(34, 230, 34);
+}
+
+.mensagem-valido{
+    background-color: greenyellow;
+    padding: 10px;
+    color: black;
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+
+.mensagem-invalido{
+    background-color: rgb(255, 113, 47);
+    padding: 10px;
+    color: black;
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
